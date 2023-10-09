@@ -19,6 +19,12 @@ form.addEventListener("subimit",(e) =>{
 
     if(media >=7) {
         resp2.innerText =`Parabéns ${nome}! Voce foi aprovado(a)`
-        resp2
+        resp2.style.color = "blue"
+    }else if (media >=4)  {
+        resp2.innerText = `atencao ${nome}! voce esta de exame`
+        resp2.style.color = "green"
+    }else{
+        resp2.innerText = `ops ${nome}! voce foi reprovado(a)`
+        resp2.style.color = "red"
     }
 })
